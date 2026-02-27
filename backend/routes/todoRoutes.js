@@ -24,7 +24,7 @@ router.post("/add",
 		.notEmpty().
 		withMessage("Title is Required").
 		isLength({ min: 4 })
-		.withMessage("Tile must be 4 charachter or more must ")],
+		.withMessage("Title must be 4 charachter or more must ")],
 
 	async (req, res, next) => {
 		try {
